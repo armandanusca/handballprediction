@@ -24,7 +24,7 @@ def getPlayerStats(player_id):
     g = soup.find_all("td", {"class":"goals_in"})
 
     #Skip if goals are empty
-    if(len(g) == 0)
+    if(len(g) == 0):
         return None, None
     
     #Add them to dictionary
