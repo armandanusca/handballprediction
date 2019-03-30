@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.shortcuts import render
 from data import players
 from difflib import SequenceMatcher as match
 import re
