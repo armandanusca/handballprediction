@@ -19,10 +19,7 @@ from searchResult.views import searchView
 from home.views import homePage
 
 urlpatterns = [
-<<<<<<< HEAD
     re_path(r'^$', homePage,name = 'home'),
-=======
->>>>>>> master
     path('admin/', admin.site.urls),
     path('searchResult/', searchView),
 ]
