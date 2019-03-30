@@ -31,9 +31,10 @@
       </div>
     </nav>
 
-    <form class="row justify-content-center align-items-center" action="">
+    <form class="row justify-content-center align-items-center" action="/searchResult/" method = "POST">
       <div class="search-bar">
         <input class="form-control search-input" type="text" name="search-input" placeholder="Search..."/>
+        {%csrf_token%}
         <button name="submit" type="submit" class="search-icon"><i class="fa fa-search"></i></button>
       </div>
     </form>
