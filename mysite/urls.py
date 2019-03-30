@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path, include, re_path
 from search.views import searchView
 from home.views import homePage
+from playerProfile.views import viewPlayer
 
 urlpatterns = [
     re_path(r'^$', homePage, name = 'home'),
     path('admin/', admin.site.urls),
     re_path(r'^search.*$', searchView, name = 'search'),
+    re_path(r'^player.*$', viewPlayer, name = 'player'),
 ]
