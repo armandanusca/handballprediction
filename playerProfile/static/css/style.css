@@ -90,7 +90,6 @@ input[type=text], input[type=date] {
 
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
 }
 
 .nav-button {
@@ -104,12 +103,12 @@ input[type=text], input[type=date] {
 
 .nav-item:hover {
   text-decoration: none;
-  border-bottom: 2px solid #fff;
   color: #00e6e6;
 }
 
 .nav-button:hover {
   text-decoration: none;
+  color: #00e6e6;
 }
 
 
@@ -192,19 +191,6 @@ hr {
 
 
 
-
-/* Hovers */
-.card-header a {
-  color: #000;
-}
-
-.card-header a:hover {
-  color: #FFA500;
-  text-decoration: none;
-}
-
-
-
 .search-container {
   position: relative;
   width: 50%;
@@ -222,4 +208,27 @@ hr {
   background-color: #FFF;
   position: absolute;
   text-align: left;
+}
+
+/* Loader */
+/* Formula taken from https://www.w3schools.com/howto/howto_css_loader.asp */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #00e6e6;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
