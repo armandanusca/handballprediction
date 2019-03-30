@@ -19,7 +19,6 @@ from searchResult.views import searchView
 from home.views import homePage
 
 urlpatterns = [
-    path('', include('polls.urls')), 
     path('admin/', admin.site.urls),
     path('searchResult/', searchView),
     path('home', homePage),
