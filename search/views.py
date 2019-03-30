@@ -12,13 +12,13 @@ def searchView(request):
     except:
         return render(request, 'search.html', {"res":[]})
 
-    res = []
+    res = set()
     print(searchString.split())
     for i,x in enumerate(players):
         for name in re.split('\W+',searchString):
             for xname in re.split('\W+',x['name,position']):
                 if match(None, name.upper(), xname.upper()).ratio() > 0.8:
-                    res.append((x['name,position'],i))
+                    res.add(x['name,position'])
 
     context = {'res':res}
 
