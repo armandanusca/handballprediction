@@ -53,7 +53,7 @@
           <h2 style="color: #00e6e6; padding-top:2%;">Season {{x.season}}: </h2>
           <div class="row">
             <div class="col-sm-4 justify-content-left">
-              <h4 style="margin: 0; padding: 0%;">Actual goals/ match: {{x.actualGoals}} </h4><br>
+              <h4 style="margin: 0; padding: 0%;">Actual goals/ season: {{x.actualGoals}} </h4><br>
             </div>
             <div class="col-sm-1">
             </div>
@@ -64,7 +64,7 @@
             </div>
             <div class="col-sm-4 justify-content-left">
               <!--h4 style="margin: 0; padding: 0%;">Predicted goals per match: {{x.predictedGoals}} </h4-->
-              <h4 style="margin: 0; padding: 0%;">Predicted goals/ match: <span id ="{{ forloop.counter0 }}"> <img src="{% static 'images/preloader_ps_fast.gif' %}" style="opacity: 0 !important; width: 70px !important;" id = "img{{ forloop.counter0 }}"></span></h4>
+              <h4 style="margin: 0; padding: 0%;">Predicted goals/ season: <span id ="{{ forloop.counter0 }}"> <img src="{% static 'images/preloader_ps_fast.gif' %}" style="opacity: 0 !important; width: 70px !important;" id = "img{{ forloop.counter0 }}"></span></h4>
               <br>
             </div>
           </div>

@@ -18,7 +18,7 @@ def searchView(request):
         for name in re.split('\W+',searchString):
             for xname in re.split('\W+',x['name']):
                 matchRatio = match(None, name.upper(), xname.upper()).ratio()
-                if matchRatio > 0.8:
+                if matchRatio > 0.7:
                     res.add((x['name'],matchRatio))
 
     res = list(res)
