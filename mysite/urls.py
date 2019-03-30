@@ -18,10 +18,12 @@ from django.urls import path, include, re_path
 from search.views import searchView
 from home.views import homePage
 from playerProfile.views import viewPlayer
+from mlstats.views import mlStats
 
 urlpatterns = [
     re_path(r'^$', homePage, name = 'home'),
     path('admin/', admin.site.urls),
     re_path(r'^search.*$', searchView, name = 'search'),
     re_path(r'^player.*$', viewPlayer, name = 'player'),
+    re_path(r'^ml.*$', mlStats, name = 'mlstats')
 ]

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'search',
     'home',
     'playerProfile',
+    'mlstats',
 ]
 
 MIDDLEWARE = [
