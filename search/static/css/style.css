@@ -63,6 +63,17 @@ footer {
   border-radius: 1000px;
 }
 
+.btn-compile {
+  padding-left: 20px;
+  padding-right: 20px;
+  /*margin-left: 8px;
+  margin-right: 8px;*/
+  background-color: #00e6e6;
+  color: #000;
+  font-weight: bold;
+  border-radius: 1000px;
+}
+
 
 input[type=text], input[type=date] {
   border-radius: 1000px;
@@ -102,16 +113,6 @@ input[type=text], input[type=date] {
   text-decoration: none;
 }
 
-.text-appearance {
-  background-color:#FFA500;
-  color: #FFF;
-  font-weight: bold;
-  text-align: center;width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
 
 .container-list {
@@ -136,14 +137,10 @@ input[type=text], input[type=date] {
 hr {
   padding-bottom: 40px;
   padding-top: 40px;
-  color: 4px solid #FFA500;
+  color: 4px solid;
 }
 
 
-.details {
-  text-align: center;
-  padding-bottom: 40px;
-}
 
 .btn-block {
   padding-bottom: 25px;
