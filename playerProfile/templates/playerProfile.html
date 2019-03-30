@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,25 +12,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link type="text/css" href="style.css" rel="stylesheet"/>
+    <link type="text/css" href="{% static 'css/style.css' %}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
-    <link rel="icon" type="image/png" href="logo.png"/>
+    <link rel="icon" type="image/png" href="{% static 'images/logo.png' %}"/>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   </head>
 
   <body>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-      <a class="navbar-brand" href="index.php">
-        <img src="logo.png" alt="Logo" style="width: 100px;">
+      <a class="navbar-brand" href="/">
+        <img src="{% static 'images/logo.png' %}" alt="Logo" style="width: 100px;">
       </a>
-      <div class="navbar-collapse justify-content-end align-items-center" id="collapsingNavbarSm">
+      <div class="navbar-collapse justify-content-end align-items-center" style="width:35%;" id="collapsingNavbarSm">
         <ul class="navbar-nav">
           <li class="nav-item">
-              Your search results <i class="fa fa-level-down" style="font-size:25px;"></i>
+              {{playerName}}
           </li>
+        </ul>
+      </div>
+      <div class="navbar-collapse justify-content-end align-items-center" id="collapsingNavbarSm">
+        <ul class="navbar-nav">
           <li>
-            <form class="justify-content-center align-items-center" action="">
-              <div class="search-bar" style="padding: 0px; margin: 0px; float:bottom;">
+            <form class="justify-content-center align-items-center" action="/searchResult/" method = "POST">
+              <div class="search-bar" style="padding: 0px; margin: 0px; float:bottom; width: 80%">
               <input class="form-control search-input" type="text" name="search-input" placeholder="Search..."/>
+              {%csrf_token%}
               <button name="submit" type="submit" class="search-icon"><i class="fa fa-search"></i></button>
               </div>
             </form>
@@ -37,13 +44,34 @@
       </div>
     </nav>
 
+    <p>{position}}</p>
+    <p>{{stats}}</p>
+      <div class="align-items-center" style="padding-left: 20%; padding-right: 20%; width: 100%;">
+        <p class="card-text">
+          <h2 style="color: #00e6e6; padding-top:2%;">Season aici: </h2>
+          <div class="row">
+            <div class="col-sm-4 justify-content-left">
+              <h4 style="margin: 0; padding: 0%;">Goals per match:  </h4>
+            </div>
+            <div class="col-sm-4">
+              <button class="btn btn-compile justify-content-right" href="#">Compile</button>
+            </div>
+            <div class="col-sm-4 justify-content-left">
+              <h4 style="margin: 0; padding: 0%;">Predicted goals per match:  </h4>
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
+
+ 
 
   </body>
 
   <footer class="text-center">
     <div class="container-fluid col-sm-5">
-      <hr class="footer-line" align="center">
-      <p class="footer-text">Made with <i class="fa fa-heart-o" style="font-size:15px;"></i> by Armand, Harry, Nora & Vlad.</p>
+      <hr class="footer-line" text-align="center">
+      <p class="footer-text">Made with <i class="fa fa-heart-o" style="font-size:15px; color: #00e6e6;"></i> by Armand, Harry, Nora & Vlad.</p>
     </div>
   </footer>
 </html>
