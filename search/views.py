@@ -16,9 +16,9 @@ def searchView(request):
     print(searchString.split())
     for i,x in enumerate(players):
         for name in re.split('\W+',searchString):
-            for xname in re.split('\W+',x['name,position']):
+            for xname in re.split('\W+',x['name']):
                 if match(None, name.upper(), xname.upper()).ratio() > 0.8:
-                    res.add(x['name,position'])
+                    res.add(x['name'])
 
     context = {'res':res}
 

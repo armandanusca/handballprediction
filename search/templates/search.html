@@ -45,11 +45,15 @@
     </nav>
 
     <div class="container justify-content-center align-items-center container-form" style="margin-top: 5%">
+
     {% if res%}
+    <form action="/playerProfile/" method = "POST">
+    {%csrf_token%}
     {% for x in res%}
-      <button class="btn btn-player form-control" style="padding-top: 2%; padding-bottom: 4%;" onclick=""><i class="em em-handball"></i>{{x}}</button>
+      <button class="btn btn-player form-control" style="padding-top: 2%; padding-bottom: 4%;" type = "submit" name = "buttonValue" value = "{{x}}"><i class="em em-handball"></i>{{x}}</button>
       <br><br>
     {%endfor%}
+    </form>
     {%else%}
     <p></p>
     <p style="text-align: center">No results found</p>
