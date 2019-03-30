@@ -15,10 +15,16 @@ def searchView(request):
     res = set()
     print(searchString.split())
     for i,x in enumerate(players):
+        percent = 0
         for name in re.split('\W+',searchString):
             for xname in re.split('\W+',x['name']):
-                if match(None, name.upper(), xname.upper()).ratio() > 0.8:
-                    res.add(x['name'])
+                matchRatio = match(None, name.upper(), xname.upper()).ratio()
+                if matchRatio > 0.8:
+                    res.add((x['name'],matchRatio))
+
+    res = list(res)
+    res.sort(reverse = True, key = lambda x: x[1])
+    res = [x[0] for x in res]
 
     context = {'res':res}
 
