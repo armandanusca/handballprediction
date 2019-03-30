@@ -48,16 +48,16 @@
 
     {% if res%}
     {% for x in res%}
-    <p>{{x}}</p>
+    <div class="container justify-content-center align-items-center container-form" style="margin-top: 40%">
+      <button class="btn btn-login btn-lg btn-profile" onclick="">{{x[0]}}</button>
+    </div>
     {%endfor%}
     {%else%}
     <p></p>
     <p style="text-align: center">No results found</p>
     {%endif%}
 
-  <div class="container justify-content-center align-items-center container-form" style="margin-top: 40%">
-    <button class="btn btn-login btn-lg btn-profile" onclick="">Name of the player</button>
-  </div>
+ 
 
   </body>
 
