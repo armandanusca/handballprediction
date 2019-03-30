@@ -1,1 +1,14 @@
-players = [{"position": "Middle Back", "name,position": "Tim  Kneule", "null": ["0.40789473684210525"], "actual_goals_per_match_year": "12.34", "predicted_goals_per_match_year": "2012/2013", "prediction_season": "Middle Back"}, {"position": "Middle Back", "name,position": "Tim  Kneule", "null": ["0.308411214953271"], "actual_goals_per_match_year": "12.34", "predicted_goals_per_match_year": "2013/2014", "prediction_season": "Middle Back"}, {"position": "Middle Back", "name,position": "Tim  Kneule", "null": ["0.40963855421686746"], "actual_goals_per_match_year": "12.34", "predicted_goals_per_match_year": "2014/2015", "prediction_season": "Middle Back"}, {"position": "Middle Back", "name,position": "Tim  Kneule", "null": ["0.4788732394366197"], "actual_goals_per_match_year": "12.34", "predicted_goals_per_match_year": "2015/2016", "prediction_season": "Middle Back"}, {"position": "Middle Back", "name,position": "Tim  Kneule", "null": ["0.35135135135135137"], "actual_goals_per_match_year": "12.34", "predicted_goals_per_match_year": "2016/2017", "prediction_season": "Middle Back"}, {"position": "Middle Back", "name,position": "Tim  Kneule", "null": ["0.29357798165137616"], "actual_goals_per_match_year": "12.34", "predicted_goals_per_match_year": "2017/2018", "prediction_season": "Middle Back"}, {"position": "Left Wing", "name,position": "Dragos-Nicolae  Oprea", "null": ["0.35294117647058826"], "actual_goals_per_match_year": "12.34", "predicted_goals_per_match_year": "2012/2013", "prediction_season": "Left Wing"}, {"position": "Left Wing", "name,position": "Dragos-Nicolae  Oprea", "null": ["0.7674418604651163"], "actual_goals_per_match_year": "12.34", "predicted_goals_per_match_year": "2013/2014", "prediction_season": "Left Wing"}, {"position": "Left Wing", "name,position": "Dragos-Nicolae  Oprea", "null": ["1.0344827586206897"], "actual_goals_per_match_year": "12.34", "predicted_goals_per_match_year": "2014/2015", "prediction_season": "Left Wing"}, {"position": "Left Wing", "name,position": "Dragos-Nicolae  Oprea", "null": ["0.39285714285714285"], "actual_goals_per_match_year": "12.34", "predicted_goals_per_match_year": "2015/2016", "prediction_season": "Left Wing"}]
+players = [{
+  'name': 'Tim Gordon',
+  'position': 'Left Wing',
+  'season': '2017',
+  'predictedGoals': 123,
+  'actualGoals': 141 
+},
+{
+  'name': 'Tim Gordon',
+  'position': 'Left Wing',
+  'season': '2018',
+  'predictedGoals': 124,
+  'actualGoals': 135 
+}]
