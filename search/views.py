@@ -10,7 +10,7 @@ def searchView(request):
     try:
         searchString = request.POST['search-input']
     except:
-        return render(request, 'searchResults.html', {"res":[]})
+        return render(request, 'search.html', {"res":[]})
 
     res = []
     print(searchString.split())
@@ -22,4 +22,4 @@ def searchView(request):
 
     context = {'res':res}
 
-    return render(request, 'searchResults.html', context)
+    return render(request, 'search.html', context)
