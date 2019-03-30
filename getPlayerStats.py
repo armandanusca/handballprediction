@@ -1,4 +1,5 @@
 import urllib.request
+from tqdm import *
 from bs4 import BeautifulSoup
 
 def getPlayerStats(player_id):
@@ -34,3 +35,9 @@ def getPlayerStats(player_id):
         m["goals"].append(int(z.text))
     return v, m
 
+for x in tqdm(range(10000000)):
+    try:
+        a,b = getPlayerStats(x+1)
+        print(x)
+    except:
+        pass
