@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+from django.shortcuts import render
+from data import players
 
-# Create your views here.
+def viewPlayer(request):
+    return render(request, 'playerProfile.html')
