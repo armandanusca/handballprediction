@@ -1,7 +1,7 @@
 /* Typography */
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 500;
   color: #333333;
   padding: 0;
@@ -78,6 +78,7 @@ input[type=text], input[type=date] {
   border-radius: 1000px;
   padding-left: 16px;
   padding-right: 16px;
+  background-color: transparent;
 }
 
 /* Navigation bar */
@@ -90,6 +91,7 @@ input[type=text], input[type=date] {
 
   text-transform: uppercase;
   text-decoration: none;
+  border-bottom: none;
 }
 
 .nav-button {
@@ -103,29 +105,15 @@ input[type=text], input[type=date] {
 
 .nav-item:hover {
   text-decoration: none;
+  border-bottom: none;
   color: #00e6e6;
 }
 
 .nav-button:hover {
   text-decoration: none;
-  color: #00e6e6;
 }
 
 
-
-.container-list {
-  padding-top: 50px;
-  width: 80%;
-}
-
-.title-list h2 {
-  font-size: 42px;
-  text-transform: none;
-}
-
-.title-signup h2 {
-  font-size: 42px;
-}
 
 .container-form {
   padding: 40px;
@@ -138,12 +126,6 @@ hr {
   color: 4px solid;
 }
 
-
-
-.btn-block {
-  padding-bottom: 25px;
-  padding-top: 25px;
-}
 
 .search-bar {
   width: 500px;
@@ -190,7 +172,6 @@ hr {
 }
 
 
-
 .search-container {
   position: relative;
   width: 50%;
@@ -208,27 +189,4 @@ hr {
   background-color: #FFF;
   position: absolute;
   text-align: left;
-}
-
-/* Loader */
-/* Formula taken from https://www.w3schools.com/howto/howto_css_loader.asp */
-.loader {
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #00e6e6;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
-  animation: spin 2s linear infinite;
-}
-
-/* Safari */
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
 }

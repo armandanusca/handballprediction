@@ -1,7 +1,7 @@
 /* Typography */
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 500;
   color: #333333;
   padding: 0;
@@ -78,6 +78,7 @@ input[type=text], input[type=date] {
   border-radius: 1000px;
   padding-left: 16px;
   padding-right: 16px;
+  background-color: transparent;
 }
 
 /* Navigation bar */
@@ -90,7 +91,7 @@ input[type=text], input[type=date] {
 
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
+  border-bottom: none;
 }
 
 .nav-button {
@@ -104,7 +105,7 @@ input[type=text], input[type=date] {
 
 .nav-item:hover {
   text-decoration: none;
-  border-bottom: 2px solid #fff;
+  border-bottom: none;
   color: #00e6e6;
 }
 
@@ -113,20 +114,6 @@ input[type=text], input[type=date] {
 }
 
 
-
-.container-list {
-  padding-top: 50px;
-  width: 80%;
-}
-
-.title-list h2 {
-  font-size: 42px;
-  text-transform: none;
-}
-
-.title-signup h2 {
-  font-size: 42px;
-}
 
 .container-form {
   padding: 40px;
@@ -139,12 +126,6 @@ hr {
   color: 4px solid;
 }
 
-
-
-.btn-block {
-  padding-bottom: 25px;
-  padding-top: 25px;
-}
 
 .search-bar {
   width: 500px;
@@ -190,18 +171,6 @@ hr {
   color: #00e6e6;
 }
 
-
-
-
-/* Hovers */
-.card-header a {
-  color: #000;
-}
-
-.card-header a:hover {
-  color: #FFA500;
-  text-decoration: none;
-}
 
 
 

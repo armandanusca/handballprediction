@@ -44,34 +44,34 @@
       </div>
     </nav>
 
+    <img src="{% static 'images/0003.gif' %}" style="width: 100%;">
 
-      <div class="align-items-center" style="padding-left: 20%; padding-right: 20%; width: 100%;">
-        <p class="card-text">
+    <div class="align-items-center" style="padding-left: 20%; padding-right: 20%; width: 100%;">
+      <p class="card-text">
 
-          {%for x in stats%}
-          <br>
-          <h2 style="color: #00e6e6; padding-top:2%;">Season {{x.season}}: </h2>
-          <div class="row">
-            <div class="col-sm-4 justify-content-left">
-              <h4 style="margin: 0; padding: 0%;">Actual goals/ season: {{x.actualGoals}} </h4><br>
-            </div>
-            <div class="col-sm-1">
-            </div>
-            <div class="col-sm-2">
-              <button class="btn btn-compile justify-content-right" style="margin-bottom:10%;" onClick="showValue({{ forloop.counter0 }},{{x.predictedGoals}})">Predict</button>
-            </div>
-            <div class="col-sm-1">
-            </div>
-            <div class="col-sm-4 justify-content-left">
-              <!--h4 style="margin: 0; padding: 0%;">Predicted goals per match: {{x.predictedGoals}} </h4-->
-              <h4 style="margin: 0; padding: 0%;">Predicted goals/ season: <span id ="{{ forloop.counter0 }}"> <img src="{% static 'images/preloader_ps_fast.gif' %}" style="opacity: 0 !important; width: 70px !important;" id = "img{{ forloop.counter0 }}"></span></h4>
-              <br>
-            </div>
+        {%for x in stats%}
+        <br>
+        <h2 style="color: #00e6e6; padding-top:2%;">Season {{x.season}}: </h2>
+        <div class="row">
+          <div class="col-sm-4 justify-content-left">
+            <h5 style="margin: 0; padding: 0%;">Actual goals/season: {{x.actualGoals}} </h5><br>
           </div>
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-2">
+            <button class="btn btn-compile justify-content-right" style="margin-bottom:10%;" onClick="showValue({{ forloop.counter0 }},{{x.predictedGoals}})">Predict</button>
+          </div>
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-4 justify-content-left">
+            <!--h4 style="margin: 0; padding: 0%;">Predicted goals per match: {{x.predictedGoals}} </h4-->
+            <h5 style="margin: 0; padding: 0%;">Predicted goals/season: <span id ="{{ forloop.counter0 }}"> <img src="{% static 'images/preloader_ps_fast.gif' %}" style="opacity: 0 !important; width: 70px !important;" id = "img{{ forloop.counter0 }}"></span></h5>
+            <br>
+          </div>
+        </div>
 
-          {%endfor%}
-        </p>
-      </div>
+        {%endfor%}
+      </p>
     </div>
 
  
