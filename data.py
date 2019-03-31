@@ -24,7 +24,7 @@ players += [{
   "actualGoals": 1243,
 },
 {
-  "name": "Tuta Nora Elena",
+  "name": "Nora Elena Tuta",
   "position": "Left Wing",
   "season": "2017-2018",
   "predictedGoals": 1241,
