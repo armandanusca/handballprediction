@@ -23,11 +23,16 @@
         <img src="{% static 'images/logo.png' %}" alt="Logo" style="width: 100px;">
       </a>
       <div class="navbar-collapse justify-content-end" id="collapsingNavbarSm">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-              Handball Prediction
-          </li>
-        </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                Handball Prediction
+            </li>
+          </ul>
+      </div>
+      <div class="navbar-collapse justify-content-end" id="collapsingNavbarSm">
+        <a class="navbar-brand" href="/mlstats.html">
+          <i class="fa fa-bar-chart" style="color: #00e6e6; font-size: 50px;"></i>
+        </a>
       </div>
     </nav>
 
@@ -41,18 +46,16 @@
   </body>
 
   <br>
-  <div class="align-items-center" style="padding-left: 20%; padding-right: 20%; width: 100%;">
-    <h2 style="color: #00e6e6; padding-top:2%; text-align:center;">What is our application about?</h2>
+  <div class="align-items-center" style="padding-left: 20%; padding-right: 20%; width: 100%;" >
+    <h2 style="color: #00e6e6; padding-top:2%;">What is our application about?</h2>
     <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-4 justify-content-left">
-        <br><h5 style="margin: 0; padding: 0%;">Well... </h5><br>
+      <div class="col-sm-6">
+        <br><h5 style="margin: 0; padding: 0%; text-align: justify; text-indent: 5%;">"Handball Prediction" is about easing the life of betting enthusiats and scouting managers, within one of the Europe's fastest growing sports, by allowing them to make bigger profit with less effort.</h5><br>
       </div>
-      <div class="col-sm-2"></div>
-      <div class="col-sm-4 justify-content-right">
-          <br><img src="{% static 'images/tackle1.gif' %}" ><br>
+      
+      <div class="col-sm-6 justify-content-right">
+          <br><img src="{% static 'images/tackle1.gif' %}" width="70%;" ><br>
       </div>
-      <div class="col-sm-1"></div>
     </div>
   </div>
   <footer class="text-center">

@@ -192,3 +192,15 @@ hr {
   position: absolute;
   text-align: left;
 }
+
+.chart-icon {
+  float: right;
+  position: absolute;
+  background-color: transparent;
+  color: #00e6e6;
+  font-size: 2.5vh;
+  top: 5%;
+  right: 5%;
+  border: none;
+  padding: inherit;
+}
